@@ -5,14 +5,8 @@ All methods listed on this page are accessible via `wkit.functionName()` without
 {% hint style=\"info\" %} The following method list is auto-generated from WolvenKit Source. {% endhint %}
 
 <!-- AUTOGEN_MARKER_START -->
-> Turn on/off updates to the project tree, useful for when making lots of changes to the project structure.
 
-| Parameter | Description |
-|-----------|-------------|
-| `suspend` | bool for if updates are suspended |
-```csharp
-SuspendFileWatcher(suspend: bool) → void
-```
+some changes
 
 ---
 
