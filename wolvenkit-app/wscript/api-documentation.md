@@ -7,7 +7,7 @@ All methods listed on this page are accessible via `wkit.functionName()` without
 <!-- AUTOGEN_MARKER_START -->
 # Overview
 
-## [AppScriptFunctions](#appscriptfunctions)
+## AppScriptFunctions
 
 TODO.
 
@@ -57,7 +57,7 @@ TODO.
 | [ConvertTDBToPath](#converttdbtopath) | No description available. |
 | [ConvertTDBToJson](#converttdbtojson) | No description available. |
 
-## [ScriptDocumentWrapper](#scriptdocumentwrapper)
+## ScriptDocumentWrapper
 
 TODO.
 
@@ -68,7 +68,7 @@ TODO.
 | [Reload](#reload) | Reloads the document. |
 | [Close](#close) | Closes the document without saving. |
 
-## [ScriptFunctions](#scriptfunctions)
+## ScriptFunctions
 
 TODO.
 
@@ -85,7 +85,7 @@ TODO.
 | [JsonToYaml](#jsontoyaml) | Converts a JSON string to a YAML string. |
 | [ConvertGameFile](#convertgamefile) | No description available. |
 
-## [UiScriptFunctions](#uiscriptfunctions)
+## UiScriptFunctions
 
 | Method | Description |
 |--------|-------------|
