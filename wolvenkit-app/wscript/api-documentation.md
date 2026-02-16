@@ -729,8 +729,6 @@ ConvertTDBToJson(tdb: object?) → string?
 ---
 
 
----
-
 ## ScriptDocumentWrapper
 
 TODO.
@@ -783,8 +781,6 @@ Close() → void
 
 ---
 
-
----
 
 ## ScriptFunctions
 
@@ -970,8 +966,6 @@ ConvertGameFile(gameFile: IGameFile, openAs: OpenAs) → ? object
 ---
 
 
----
-
 ## UiScriptFunctions
 
 ### AddMenuItem
@@ -1031,5 +1025,3 @@ AddMenuItem(target: ScriptFunctionWrapper, name: string, onClick: ScriptObject? 
 
 ---
 
-
----
