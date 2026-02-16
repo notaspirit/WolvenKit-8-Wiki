@@ -11,77 +11,85 @@ All methods listed on this page are accessible via `wkit.functionName()` without
 
 TODO.
 
-[SuspendFileWatcher](#AppScriptFunctions-SuspendFileWatcher)          Turn on/off updates to the project tree, useful for when making lots of changes to the project structure.
-[SaveToProject](#AppScriptFunctions-SaveToProject)               Add the specified CR2WFile or IGameFile file to the project.
-[SaveToRaw](#AppScriptFunctions-SaveToRaw)                   Save the specified text to the specified path in the raw folder.
-[SaveToResources](#AppScriptFunctions-SaveToResources)             Save the specified text to the specified path in the resources folder.
-[LoadFromResources](#AppScriptFunctions-LoadFromResources)           Loads the content of a text file from resources.
-[LoadGameFileFromProject](#AppScriptFunctions-LoadGameFileFromProject)     Loads the specified game file from the project files rather than game archives.
-[LoadRawJsonFromProject](#AppScriptFunctions-LoadRawJsonFromProject)      Loads the specified json file from the project raw files rather than game archives.
-[GetProjectFiles](#AppScriptFunctions-GetProjectFiles)             Retrieves a list of files from the project.
-[ClearExportFileLookup](#AppScriptFunctions-ClearExportFileLookup)       Clears the lookup for exported depot files.
-[ExportFiles](#AppScriptFunctions-ExportFiles)                 Exports a list of files as you would with the export tool.
-[GetFileFromProject](#AppScriptFunctions-GetFileFromProject)          Loads a file from the project using either a file path or hash.
-[GetFile](#AppScriptFunctions-GetFile)                     Loads a file from the project or archive (in this order) using either a file path or hash.
-[FileExistsInProject](#AppScriptFunctions-FileExistsInProject)         Check if file exists in the project.
-[FileExists](#AppScriptFunctions-FileExists)                  Check if file exists in either the game archives or the project.
-[FileExistsInRaw](#AppScriptFunctions-FileExistsInRaw)             Check if file exists in the project Raw folder.
-[DeleteFile](#AppScriptFunctions-DeleteFile)                  Deletes a file from the project, if it exists.
-[GetRecords](#AppScriptFunctions-GetRecords)                  Loads all records as TweakDBID paths.
-[GetFlats](#AppScriptFunctions-GetFlats)                    Loads all flats as TweakDBID paths.
-[GetQueries](#AppScriptFunctions-GetQueries)                  Loads all queries as TweakDBID paths.
-[GetGroupTags](#AppScriptFunctions-GetGroupTags)                Loads all group tags as TweakDBID paths.
-[GetRecord](#AppScriptFunctions-GetRecord)                   Loads a record by its TweakDBID path.
-[GetFlat](#AppScriptFunctions-GetFlat)                     Loads a flat by its TweakDBID path.
-[GetQuery](#AppScriptFunctions-GetQuery)                    Loads flats of a query by its TweakDBID path.
-[GetGroupTag](#AppScriptFunctions-GetGroupTag)                 Loads a group tag by its TweakDBID path.
-[HasTDBID](#AppScriptFunctions-HasTDBID)                    Whether TweakDBID path exists as a flat or a record?
-[GetTDBIDPath](#AppScriptFunctions-GetTDBIDPath)                Tries to get TweakDBID path from its hash.
-[ShowMessageBox](#AppScriptFunctions-ShowMessageBox)              Displays a message box.
-[Extract](#AppScriptFunctions-Extract)                     Extracts a file from the base archive and adds it to the project.
-[GetActiveDocument](#AppScriptFunctions-GetActiveDocument)           Gets the current active document from the docking manager.
-[GetDocuments](#AppScriptFunctions-GetDocuments)                Gets all documents from the docking manager.
-[OpenDocument](#AppScriptFunctions-OpenDocument)                Opens a file in  WolvenKit .
-[ExportGeometryCacheEntry](#AppScriptFunctions-ExportGeometryCacheEntry)    Exports an geometry_cache entry.
-[CreateInstanceAsJSON](#AppScriptFunctions-CreateInstanceAsJSON)        Creates a new instance of the given class, and returns it converted to a JSON string.
-[HashString](#AppScriptFunctions-HashString)                  Returns the hashcode for a given string.
-[Sleep](#AppScriptFunctions-Sleep)                       Pauses the execution of the script for the specified amount of milliseconds.
-[ProgramVersion](#AppScriptFunctions-ProgramVersion)              Returns the current wolvenkit version.
-[ShowSettings](#AppScriptFunctions-ShowSettings)                Shows the settings dialog for the supplied data.
-[SaveAs](#AppScriptFunctions-SaveAs)                      No description available.
-[GetBaseFolder](#AppScriptFunctions-GetBaseFolder)               No description available.
-[ParseExportSettings< T >](#AppScriptFunctions-ParseExportSettings-T)    No description available.
-[GetGlobalExportArgs](#AppScriptFunctions-GetGlobalExportArgs)         No description available.
-[ConvertTDBToPath](#AppScriptFunctions-ConvertTDBToPath)            No description available.
-[ConvertTDBToJson](#AppScriptFunctions-ConvertTDBToJson)            No description available.
+| Method | Description |
+|--------|-------------|
+| [SuspendFileWatcher](#SuspendFileWatcher) | Turn on/off updates to the project tree, useful for when making lots of changes to the project structure. |
+| [SaveToProject](#SaveToProject) | Add the specified CR2WFile or IGameFile file to the project. |
+| [SaveToRaw](#SaveToRaw) | Save the specified text to the specified path in the raw folder. |
+| [SaveToResources](#SaveToResources) | Save the specified text to the specified path in the resources folder. |
+| [LoadFromResources](#LoadFromResources) | Loads the content of a text file from resources. |
+| [LoadGameFileFromProject](#LoadGameFileFromProject) | Loads the specified game file from the project files rather than game archives. |
+| [LoadRawJsonFromProject](#LoadRawJsonFromProject) | Loads the specified json file from the project raw files rather than game archives. |
+| [GetProjectFiles](#GetProjectFiles) | Retrieves a list of files from the project. |
+| [ClearExportFileLookup](#ClearExportFileLookup) | Clears the lookup for exported depot files. |
+| [ExportFiles](#ExportFiles) | Exports a list of files as you would with the export tool. |
+| [GetFileFromProject](#GetFileFromProject) | Loads a file from the project using either a file path or hash. |
+| [GetFile](#GetFile) | Loads a file from the project or archive (in this order) using either a file path or hash. |
+| [FileExistsInProject](#FileExistsInProject) | Check if file exists in the project. |
+| [FileExists](#FileExists) | Check if file exists in either the game archives or the project. |
+| [FileExistsInRaw](#FileExistsInRaw) | Check if file exists in the project Raw folder. |
+| [DeleteFile](#DeleteFile) | Deletes a file from the project, if it exists. |
+| [GetRecords](#GetRecords) | Loads all records as TweakDBID paths. |
+| [GetFlats](#GetFlats) | Loads all flats as TweakDBID paths. |
+| [GetQueries](#GetQueries) | Loads all queries as TweakDBID paths. |
+| [GetGroupTags](#GetGroupTags) | Loads all group tags as TweakDBID paths. |
+| [GetRecord](#GetRecord) | Loads a record by its TweakDBID path. |
+| [GetFlat](#GetFlat) | Loads a flat by its TweakDBID path. |
+| [GetQuery](#GetQuery) | Loads flats of a query by its TweakDBID path. |
+| [GetGroupTag](#GetGroupTag) | Loads a group tag by its TweakDBID path. |
+| [HasTDBID](#HasTDBID) | Whether TweakDBID path exists as a flat or a record? |
+| [GetTDBIDPath](#GetTDBIDPath) | Tries to get TweakDBID path from its hash. |
+| [ShowMessageBox](#ShowMessageBox) | Displays a message box. |
+| [Extract](#Extract) | Extracts a file from the base archive and adds it to the project. |
+| [GetActiveDocument](#GetActiveDocument) | Gets the current active document from the docking manager. |
+| [GetDocuments](#GetDocuments) | Gets all documents from the docking manager. |
+| [OpenDocument](#OpenDocument) | Opens a file in  WolvenKit . |
+| [ExportGeometryCacheEntry](#ExportGeometryCacheEntry) | Exports an geometry_cache entry. |
+| [CreateInstanceAsJSON](#CreateInstanceAsJSON) | Creates a new instance of the given class, and returns it converted to a JSON string. |
+| [HashString](#HashString) | Returns the hashcode for a given string. |
+| [Sleep](#Sleep) | Pauses the execution of the script for the specified amount of milliseconds. |
+| [ProgramVersion](#ProgramVersion) | Returns the current wolvenkit version. |
+| [ShowSettings](#ShowSettings) | Shows the settings dialog for the supplied data. |
+| [SaveAs](#SaveAs) | No description available. |
+| [GetBaseFolder](#GetBaseFolder) | No description available. |
+| [ParseExportSettings< T >](#ParseExportSettings-T) | No description available. |
+| [GetGlobalExportArgs](#GetGlobalExportArgs) | No description available. |
+| [ConvertTDBToPath](#ConvertTDBToPath) | No description available. |
+| [ConvertTDBToJson](#ConvertTDBToJson) | No description available. |
 
 ## [ScriptDocumentWrapper](#ScriptDocumentWrapper)
 
 TODO.
 
-[GetGameFile](#ScriptDocumentWrapper-GetGameFile)    Gets the game file.
-[Save](#ScriptDocumentWrapper-Save)           Saves the document.
-[Reload](#ScriptDocumentWrapper-Reload)         Reloads the document.
-[Close](#ScriptDocumentWrapper-Close)          Closes the document without saving.
+| Method | Description |
+|--------|-------------|
+| [GetGameFile](#GetGameFile) | Gets the game file. |
+| [Save](#Save) | Saves the document. |
+| [Reload](#Reload) | Reloads the document. |
+| [Close](#Close) | Closes the document without saving. |
 
 ## [ScriptFunctions](#ScriptFunctions)
 
 TODO.
 
-[GetArchiveFiles](#ScriptFunctions-GetArchiveFiles)        Gets a list of the files available in the game archives Note to myself: Don't use IEnumerable<T>
-[GetFileFromBase](#ScriptFunctions-GetFileFromBase)        DEPRECATED: Please use GetFileFromArchive(path, OpenAs.GameFile) Loads a file from the base archives using either a file path or hash.
-[GameFileToJson](#ScriptFunctions-GameFileToJson)         Creates a json representation of the specifed game file.
-[JsonToCR2W](#ScriptFunctions-JsonToCR2W)             Creates a CR2W game file from a json.
-[ChangeExtension](#ScriptFunctions-ChangeExtension)        Changes the extension of the provided string path.
-[GetFileFromArchive](#ScriptFunctions-GetFileFromArchive)     Loads a file from the base archives using either a file path or hash.
-[FileExistsInArchive](#ScriptFunctions-FileExistsInArchive)    Check if file exists in the game archives.
-[YamlToJson](#ScriptFunctions-YamlToJson)             Converts a YAML string to a JSON string.
-[JsonToYaml](#ScriptFunctions-JsonToYaml)             Converts a JSON string to a YAML string.
-[ConvertGameFile](#ScriptFunctions-ConvertGameFile)        No description available.
+| Method | Description |
+|--------|-------------|
+| [GetArchiveFiles](#GetArchiveFiles) | Gets a list of the files available in the game archives Note to myself: Don't use IEnumerable<T> |
+| [GetFileFromBase](#GetFileFromBase) | DEPRECATED: Please use GetFileFromArchive(path, OpenAs.GameFile) Loads a file from the base archives using either a file path or hash. |
+| [GameFileToJson](#GameFileToJson) | Creates a json representation of the specifed game file. |
+| [JsonToCR2W](#JsonToCR2W) | Creates a CR2W game file from a json. |
+| [ChangeExtension](#ChangeExtension) | Changes the extension of the provided string path. |
+| [GetFileFromArchive](#GetFileFromArchive) | Loads a file from the base archives using either a file path or hash. |
+| [FileExistsInArchive](#FileExistsInArchive) | Check if file exists in the game archives. |
+| [YamlToJson](#YamlToJson) | Converts a YAML string to a JSON string. |
+| [JsonToYaml](#JsonToYaml) | Converts a JSON string to a YAML string. |
+| [ConvertGameFile](#ConvertGameFile) | No description available. |
 
 ## [UiScriptFunctions](#UiScriptFunctions)
 
-[AddMenuItem](#UiScriptFunctions-AddMenuItem)    No description available.
+| Method | Description |
+|--------|-------------|
+| [AddMenuItem](#AddMenuItem) | No description available. |
 
 ---
 
