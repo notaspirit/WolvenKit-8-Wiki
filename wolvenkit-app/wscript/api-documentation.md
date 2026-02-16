@@ -7,93 +7,89 @@ All methods listed on this page are accessible via `wkit.functionName()` without
 <!-- AUTOGEN_MARKER_START -->
 # Overview
 
-## <a href="api-documentation.md#appscriptfunctions">AppScriptFunctions</a>
+## <a href="README.md#appscriptfunctions">AppScriptFunctions</a>
 
 TODO.
 
-<table>
-<tr><td width="300"><b>Method</b></td><td><b>Description</b></td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-suspendfilewatcher">SuspendFileWatcher</a></code></td><td>Turn on/off updates to the project tree, useful for when making lots of changes to the project structure.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-savetoproject">SaveToProject</a></code></td><td>Add the specified CR2WFile or IGameFile file to the project.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-savetoraw">SaveToRaw</a></code></td><td>Save the specified text to the specified path in the raw folder.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-savetoresources">SaveToResources</a></code></td><td>Save the specified text to the specified path in the resources folder.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-loadfromresources">LoadFromResources</a></code></td><td>Loads the content of a text file from resources.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-loadgamefilefromproject">LoadGameFileFromProject</a></code></td><td>Loads the specified game file from the project files rather than game archives.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-loadrawjsonfromproject">LoadRawJsonFromProject</a></code></td><td>Loads the specified json file from the project raw files rather than game archives.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-getprojectfiles">GetProjectFiles</a></code></td><td>Retrieves a list of files from the project.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-clearexportfilelookup">ClearExportFileLookup</a></code></td><td>Clears the lookup for exported depot files.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-exportfiles">ExportFiles</a></code></td><td>Exports a list of files as you would with the export tool.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-getfilefromproject">GetFileFromProject</a></code></td><td>Loads a file from the project using either a file path or hash.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-getfile">GetFile</a></code></td><td>Loads a file from the project or archive (in this order) using either a file path or hash.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-fileexistsinproject">FileExistsInProject</a></code></td><td>Check if file exists in the project.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-fileexists">FileExists</a></code></td><td>Check if file exists in either the game archives or the project.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-fileexistsinraw">FileExistsInRaw</a></code></td><td>Check if file exists in the project Raw folder.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-deletefile">DeleteFile</a></code></td><td>Deletes a file from the project, if it exists.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-getrecords">GetRecords</a></code></td><td>Loads all records as TweakDBID paths.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-getflats">GetFlats</a></code></td><td>Loads all flats as TweakDBID paths.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-getqueries">GetQueries</a></code></td><td>Loads all queries as TweakDBID paths.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-getgrouptags">GetGroupTags</a></code></td><td>Loads all group tags as TweakDBID paths.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-getrecord">GetRecord</a></code></td><td>Loads a record by its TweakDBID path.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-getflat">GetFlat</a></code></td><td>Loads a flat by its TweakDBID path.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-getquery">GetQuery</a></code></td><td>Loads flats of a query by its TweakDBID path.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-getgrouptag">GetGroupTag</a></code></td><td>Loads a group tag by its TweakDBID path.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-hastdbid">HasTDBID</a></code></td><td>Whether TweakDBID path exists as a flat or a record?</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-gettdbidpath">GetTDBIDPath</a></code></td><td>Tries to get TweakDBID path from its hash.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-showmessagebox">ShowMessageBox</a></code></td><td>Displays a message box.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-extract">Extract</a></code></td><td>Extracts a file from the base archive and adds it to the project.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-getactivedocument">GetActiveDocument</a></code></td><td>Gets the current active document from the docking manager.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-getdocuments">GetDocuments</a></code></td><td>Gets all documents from the docking manager.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-opendocument">OpenDocument</a></code></td><td>Opens a file in  WolvenKit .</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-exportgeometrycacheentry">ExportGeometryCacheEntry</a></code></td><td>Exports an geometry_cache entry.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-createinstanceasjson">CreateInstanceAsJSON</a></code></td><td>Creates a new instance of the given class, and returns it converted to a JSON string.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-hashstring">HashString</a></code></td><td>Returns the hashcode for a given string.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-sleep">Sleep</a></code></td><td>Pauses the execution of the script for the specified amount of milliseconds.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-programversion">ProgramVersion</a></code></td><td>Returns the current wolvenkit version.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-showsettings">ShowSettings</a></code></td><td>Shows the settings dialog for the supplied data.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-saveas">SaveAs</a></code></td><td>No description available.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-getbasefolder">GetBaseFolder</a></code></td><td>No description available.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-parseexportsettings-t">ParseExportSettings< T ></a></code></td><td>No description available.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-getglobalexportargs">GetGlobalExportArgs</a></code></td><td>No description available.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-converttdbtopath">ConvertTDBToPath</a></code></td><td>No description available.</td></tr>
-<tr><td><code><a href="api-documentation.md#appscriptfunctions-converttdbtojson">ConvertTDBToJson</a></code></td><td>No description available.</td></tr>
-</table>
+| Method | Description |
+|--------|-------------|
+| [SuspendFileWatcher](README.md#appscriptfunctions-suspendfilewatcher) | Turn on/off updates to the project tree, useful for when making lots of changes to the project structure. |
+| [SaveToProject](README.md#appscriptfunctions-savetoproject) | Add the specified CR2WFile or IGameFile file to the project. |
+| [SaveToRaw](README.md#appscriptfunctions-savetoraw) | Save the specified text to the specified path in the raw folder. |
+| [SaveToResources](README.md#appscriptfunctions-savetoresources) | Save the specified text to the specified path in the resources folder. |
+| [LoadFromResources](README.md#appscriptfunctions-loadfromresources) | Loads the content of a text file from resources. |
+| [LoadGameFileFromProject](README.md#appscriptfunctions-loadgamefilefromproject) | Loads the specified game file from the project files rather than game archives. |
+| [LoadRawJsonFromProject](README.md#appscriptfunctions-loadrawjsonfromproject) | Loads the specified json file from the project raw files rather than game archives. |
+| [GetProjectFiles](README.md#appscriptfunctions-getprojectfiles) | Retrieves a list of files from the project. |
+| [ClearExportFileLookup](README.md#appscriptfunctions-clearexportfilelookup) | Clears the lookup for exported depot files. |
+| [ExportFiles](README.md#appscriptfunctions-exportfiles) | Exports a list of files as you would with the export tool. |
+| [GetFileFromProject](README.md#appscriptfunctions-getfilefromproject) | Loads a file from the project using either a file path or hash. |
+| [GetFile](README.md#appscriptfunctions-getfile) | Loads a file from the project or archive (in this order) using either a file path or hash. |
+| [FileExistsInProject](README.md#appscriptfunctions-fileexistsinproject) | Check if file exists in the project. |
+| [FileExists](README.md#appscriptfunctions-fileexists) | Check if file exists in either the game archives or the project. |
+| [FileExistsInRaw](README.md#appscriptfunctions-fileexistsinraw) | Check if file exists in the project Raw folder. |
+| [DeleteFile](README.md#appscriptfunctions-deletefile) | Deletes a file from the project, if it exists. |
+| [GetRecords](README.md#appscriptfunctions-getrecords) | Loads all records as TweakDBID paths. |
+| [GetFlats](README.md#appscriptfunctions-getflats) | Loads all flats as TweakDBID paths. |
+| [GetQueries](README.md#appscriptfunctions-getqueries) | Loads all queries as TweakDBID paths. |
+| [GetGroupTags](README.md#appscriptfunctions-getgrouptags) | Loads all group tags as TweakDBID paths. |
+| [GetRecord](README.md#appscriptfunctions-getrecord) | Loads a record by its TweakDBID path. |
+| [GetFlat](README.md#appscriptfunctions-getflat) | Loads a flat by its TweakDBID path. |
+| [GetQuery](README.md#appscriptfunctions-getquery) | Loads flats of a query by its TweakDBID path. |
+| [GetGroupTag](README.md#appscriptfunctions-getgrouptag) | Loads a group tag by its TweakDBID path. |
+| [HasTDBID](README.md#appscriptfunctions-hastdbid) | Whether TweakDBID path exists as a flat or a record? |
+| [GetTDBIDPath](README.md#appscriptfunctions-gettdbidpath) | Tries to get TweakDBID path from its hash. |
+| [ShowMessageBox](README.md#appscriptfunctions-showmessagebox) | Displays a message box. |
+| [Extract](README.md#appscriptfunctions-extract) | Extracts a file from the base archive and adds it to the project. |
+| [GetActiveDocument](README.md#appscriptfunctions-getactivedocument) | Gets the current active document from the docking manager. |
+| [GetDocuments](README.md#appscriptfunctions-getdocuments) | Gets all documents from the docking manager. |
+| [OpenDocument](README.md#appscriptfunctions-opendocument) | Opens a file in  WolvenKit . |
+| [ExportGeometryCacheEntry](README.md#appscriptfunctions-exportgeometrycacheentry) | Exports an geometry_cache entry. |
+| [CreateInstanceAsJSON](README.md#appscriptfunctions-createinstanceasjson) | Creates a new instance of the given class, and returns it converted to a JSON string. |
+| [HashString](README.md#appscriptfunctions-hashstring) | Returns the hashcode for a given string. |
+| [Sleep](README.md#appscriptfunctions-sleep) | Pauses the execution of the script for the specified amount of milliseconds. |
+| [ProgramVersion](README.md#appscriptfunctions-programversion) | Returns the current wolvenkit version. |
+| [ShowSettings](README.md#appscriptfunctions-showsettings) | Shows the settings dialog for the supplied data. |
+| [SaveAs](README.md#appscriptfunctions-saveas) | No description available. |
+| [GetBaseFolder](README.md#appscriptfunctions-getbasefolder) | No description available. |
+| [ParseExportSettings< T >](README.md#appscriptfunctions-parseexportsettings-t) | No description available. |
+| [GetGlobalExportArgs](README.md#appscriptfunctions-getglobalexportargs) | No description available. |
+| [ConvertTDBToPath](README.md#appscriptfunctions-converttdbtopath) | No description available. |
+| [ConvertTDBToJson](README.md#appscriptfunctions-converttdbtojson) | No description available. |
 
-## <a href="api-documentation.md#scriptdocumentwrapper">ScriptDocumentWrapper</a>
-
-TODO.
-
-<table>
-<tr><td width="300"><b>Method</b></td><td><b>Description</b></td></tr>
-<tr><td><code><a href="api-documentation.md#scriptdocumentwrapper-getgamefile">GetGameFile</a></code></td><td>Gets the game file.</td></tr>
-<tr><td><code><a href="api-documentation.md#scriptdocumentwrapper-save">Save</a></code></td><td>Saves the document.</td></tr>
-<tr><td><code><a href="api-documentation.md#scriptdocumentwrapper-reload">Reload</a></code></td><td>Reloads the document.</td></tr>
-<tr><td><code><a href="api-documentation.md#scriptdocumentwrapper-close">Close</a></code></td><td>Closes the document without saving.</td></tr>
-</table>
-
-## <a href="api-documentation.md#scriptfunctions">ScriptFunctions</a>
+## <a href="README.md#scriptdocumentwrapper">ScriptDocumentWrapper</a>
 
 TODO.
 
-<table>
-<tr><td width="300"><b>Method</b></td><td><b>Description</b></td></tr>
-<tr><td><code><a href="api-documentation.md#scriptfunctions-getarchivefiles">GetArchiveFiles</a></code></td><td>Gets a list of the files available in the game archives Note to myself: Don't use IEnumerable<T></td></tr>
-<tr><td><code><a href="api-documentation.md#scriptfunctions-getfilefrombase">GetFileFromBase</a></code></td><td>DEPRECATED: Please use GetFileFromArchive(path, OpenAs.GameFile) Loads a file from the base archives using either a file path or hash.</td></tr>
-<tr><td><code><a href="api-documentation.md#scriptfunctions-gamefiletojson">GameFileToJson</a></code></td><td>Creates a json representation of the specifed game file.</td></tr>
-<tr><td><code><a href="api-documentation.md#scriptfunctions-jsontocr2w">JsonToCR2W</a></code></td><td>Creates a CR2W game file from a json.</td></tr>
-<tr><td><code><a href="api-documentation.md#scriptfunctions-changeextension">ChangeExtension</a></code></td><td>Changes the extension of the provided string path.</td></tr>
-<tr><td><code><a href="api-documentation.md#scriptfunctions-getfilefromarchive">GetFileFromArchive</a></code></td><td>Loads a file from the base archives using either a file path or hash.</td></tr>
-<tr><td><code><a href="api-documentation.md#scriptfunctions-fileexistsinarchive">FileExistsInArchive</a></code></td><td>Check if file exists in the game archives.</td></tr>
-<tr><td><code><a href="api-documentation.md#scriptfunctions-yamltojson">YamlToJson</a></code></td><td>Converts a YAML string to a JSON string.</td></tr>
-<tr><td><code><a href="api-documentation.md#scriptfunctions-jsontoyaml">JsonToYaml</a></code></td><td>Converts a JSON string to a YAML string.</td></tr>
-<tr><td><code><a href="api-documentation.md#scriptfunctions-convertgamefile">ConvertGameFile</a></code></td><td>No description available.</td></tr>
-</table>
+| Method | Description |
+|--------|-------------|
+| [GetGameFile](README.md#scriptdocumentwrapper-getgamefile) | Gets the game file. |
+| [Save](README.md#scriptdocumentwrapper-save) | Saves the document. |
+| [Reload](README.md#scriptdocumentwrapper-reload) | Reloads the document. |
+| [Close](README.md#scriptdocumentwrapper-close) | Closes the document without saving. |
 
-## <a href="api-documentation.md#uiscriptfunctions">UiScriptFunctions</a>
+## <a href="README.md#scriptfunctions">ScriptFunctions</a>
 
-<table>
-<tr><td width="300"><b>Method</b></td><td><b>Description</b></td></tr>
-<tr><td><code><a href="api-documentation.md#uiscriptfunctions-addmenuitem">AddMenuItem</a></code></td><td>No description available.</td></tr>
-</table>
+TODO.
+
+| Method | Description |
+|--------|-------------|
+| [GetArchiveFiles](README.md#scriptfunctions-getarchivefiles) | Gets a list of the files available in the game archives Note to myself: Don't use IEnumerable<T> |
+| [GetFileFromBase](README.md#scriptfunctions-getfilefrombase) | DEPRECATED: Please use GetFileFromArchive(path, OpenAs.GameFile) Loads a file from the base archives using either a file path or hash. |
+| [GameFileToJson](README.md#scriptfunctions-gamefiletojson) | Creates a json representation of the specifed game file. |
+| [JsonToCR2W](README.md#scriptfunctions-jsontocr2w) | Creates a CR2W game file from a json. |
+| [ChangeExtension](README.md#scriptfunctions-changeextension) | Changes the extension of the provided string path. |
+| [GetFileFromArchive](README.md#scriptfunctions-getfilefromarchive) | Loads a file from the base archives using either a file path or hash. |
+| [FileExistsInArchive](README.md#scriptfunctions-fileexistsinarchive) | Check if file exists in the game archives. |
+| [YamlToJson](README.md#scriptfunctions-yamltojson) | Converts a YAML string to a JSON string. |
+| [JsonToYaml](README.md#scriptfunctions-jsontoyaml) | Converts a JSON string to a YAML string. |
+| [ConvertGameFile](README.md#scriptfunctions-convertgamefile) | No description available. |
+
+## <a href="README.md#uiscriptfunctions">UiScriptFunctions</a>
+
+| Method | Description |
+|--------|-------------|
+| [AddMenuItem](README.md#uiscriptfunctions-addmenuitem) | No description available. |
 
 ---
 
