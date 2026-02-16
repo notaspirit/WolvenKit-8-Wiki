@@ -5,16 +5,108 @@ All methods listed on this page are accessible via `wkit.functionName()` without
 {% hint style=\"info\" %} The following method list is auto-generated from WolvenKit Source. {% endhint %}
 
 <!-- AUTOGEN_MARKER_START -->
+# Overview
+
+## [WolvenKit.App.Scripting](#wolvenkit-app-scripting)
+
+TODO.
+
+- **[SuspendFileWatcher](#wolvenkit-app-scripting-suspendfilewatcher)** — Turn on/off updates to the project tree, useful for when making lots of changes to the project structure.
+- **[SaveToProject](#wolvenkit-app-scripting-savetoproject)** — Add the specified CR2WFile or IGameFile file to the project.
+- **[SaveToRaw](#wolvenkit-app-scripting-savetoraw)** — Save the specified text to the specified path in the raw folder.
+- **[SaveToResources](#wolvenkit-app-scripting-savetoresources)** — Save the specified text to the specified path in the resources folder.
+- **[LoadFromResources](#wolvenkit-app-scripting-loadfromresources)** — Loads the content of a text file from resources.
+- **[LoadGameFileFromProject](#wolvenkit-app-scripting-loadgamefilefromproject)** — Loads the specified game file from the project files rather than game archives.
+- **[LoadRawJsonFromProject](#wolvenkit-app-scripting-loadrawjsonfromproject)** — Loads the specified json file from the project raw files rather than game archives.
+- **[GetProjectFiles](#wolvenkit-app-scripting-getprojectfiles)** — Retrieves a list of files from the project.
+- **[ClearExportFileLookup](#wolvenkit-app-scripting-clearexportfilelookup)** — Clears the lookup for exported depot files.
+- **[ExportFiles](#wolvenkit-app-scripting-exportfiles)** — Exports a list of files as you would with the export tool.
+- **[GetFileFromProject](#wolvenkit-app-scripting-getfilefromproject)** — Loads a file from the project using either a file path or hash.
+- **[GetFileFromProject](#wolvenkit-app-scripting-getfilefromproject)** — Loads a file from the project using either a file path or hash.
+- **[GetFile](#wolvenkit-app-scripting-getfile)** — Loads a file from the project or archive (in this order) using either a file path or hash.
+- **[GetFile](#wolvenkit-app-scripting-getfile)** — Loads a file from the project or archive (in this order) using either a file path or hash.
+- **[FileExistsInProject](#wolvenkit-app-scripting-fileexistsinproject)** — Check if file exists in the project.
+- **[FileExistsInProject](#wolvenkit-app-scripting-fileexistsinproject)** — Check if file exists in the project.
+- **[FileExists](#wolvenkit-app-scripting-fileexists)** — Check if file exists in either the game archives or the project.
+- **[FileExists](#wolvenkit-app-scripting-fileexists)** — Check if file exists in either the game archives or the project.
+- **[FileExistsInRaw](#wolvenkit-app-scripting-fileexistsinraw)** — Check if file exists in the project Raw folder.
+- **[DeleteFile](#wolvenkit-app-scripting-deletefile)** — Deletes a file from the project, if it exists.
+- **[GetRecords](#wolvenkit-app-scripting-getrecords)** — Loads all records as TweakDBID paths.
+- **[GetFlats](#wolvenkit-app-scripting-getflats)** — Loads all flats as TweakDBID paths.
+- **[GetQueries](#wolvenkit-app-scripting-getqueries)** — Loads all queries as TweakDBID paths.
+- **[GetGroupTags](#wolvenkit-app-scripting-getgrouptags)** — Loads all group tags as TweakDBID paths.
+- **[GetRecord](#wolvenkit-app-scripting-getrecord)** — Loads a record by its TweakDBID path.
+- **[GetFlat](#wolvenkit-app-scripting-getflat)** — Loads a flat by its TweakDBID path.
+- **[GetQuery](#wolvenkit-app-scripting-getquery)** — Loads flats of a query by its TweakDBID path.
+- **[GetGroupTag](#wolvenkit-app-scripting-getgrouptag)** — Loads a group tag by its TweakDBID path.
+- **[HasTDBID](#wolvenkit-app-scripting-hastdbid)** — Whether TweakDBID path exists as a flat or a record?
+- **[GetTDBIDPath](#wolvenkit-app-scripting-gettdbidpath)** — Tries to get TweakDBID path from its hash.
+- **[ShowMessageBox](#wolvenkit-app-scripting-showmessagebox)** — Displays a message box.
+- **[Extract](#wolvenkit-app-scripting-extract)** — Extracts a file from the base archive and adds it to the project.
+- **[GetActiveDocument](#wolvenkit-app-scripting-getactivedocument)** — Gets the current active document from the docking manager.
+- **[GetDocuments](#wolvenkit-app-scripting-getdocuments)** — Gets all documents from the docking manager.
+- **[OpenDocument](#wolvenkit-app-scripting-opendocument)** — Opens a file in  WolvenKit .
+- **[OpenDocument](#wolvenkit-app-scripting-opendocument)** — Opens an archive game file.
+- **[ExportGeometryCacheEntry](#wolvenkit-app-scripting-exportgeometrycacheentry)** — Exports an geometry_cache entry.
+- **[CreateInstanceAsJSON](#wolvenkit-app-scripting-createinstanceasjson)** — Creates a new instance of the given class, and returns it converted to a JSON string.
+- **[HashString](#wolvenkit-app-scripting-hashstring)** — Returns the hashcode for a given string.
+- **[Sleep](#wolvenkit-app-scripting-sleep)** — Pauses the execution of the script for the specified amount of milliseconds.
+- **[ProgramVersion](#wolvenkit-app-scripting-programversion)** — Returns the current wolvenkit version.
+- **[ShowSettings](#wolvenkit-app-scripting-showsettings)** — Shows the settings dialog for the supplied data.
+- **[SaveAs](#wolvenkit-app-scripting-saveas)** — No description available.
+- **[GetBaseFolder](#wolvenkit-app-scripting-getbasefolder)** — No description available.
+- **[ParseExportSettings< T >](#wolvenkit-app-scripting-parseexportsettings-t)** — No description available.
+- **[GetGlobalExportArgs](#wolvenkit-app-scripting-getglobalexportargs)** — No description available.
+- **[ConvertTDBToPath](#wolvenkit-app-scripting-converttdbtopath)** — No description available.
+- **[ConvertTDBToJson](#wolvenkit-app-scripting-converttdbtojson)** — No description available.
+- **[GetGameFile](#wolvenkit-app-scripting-getgamefile)** — Gets the game file.
+- **[Save](#wolvenkit-app-scripting-save)** — Saves the document.
+- **[Reload](#wolvenkit-app-scripting-reload)** — Reloads the document.
+- **[Close](#wolvenkit-app-scripting-close)** — Closes the document without saving.
+- **[AddMenuItem](#wolvenkit-app-scripting-addmenuitem)** — No description available.
+- **[AddMenuItem](#wolvenkit-app-scripting-addmenuitem)** — No description available.
+- **[AddMenuItem](#wolvenkit-app-scripting-addmenuitem)** — No description available.
+- **[AddMenuItem](#wolvenkit-app-scripting-addmenuitem)** — No description available.
+
+## [WolvenKit.Modkit.Scripting](#wolvenkit-modkit-scripting)
+
+TODO.
+
+- **[GetArchiveFiles](#wolvenkit-modkit-scripting-getarchivefiles)** — Gets a list of the files available in the game archives Note to myself: Don't use IEnumerable<T>
+- **[GetFileFromBase](#wolvenkit-modkit-scripting-getfilefrombase)** — DEPRECATED: Please use GetFileFromArchive(path, OpenAs.GameFile) Loads a file from the base archives using either a file path or hash.
+- **[GetFileFromBase](#wolvenkit-modkit-scripting-getfilefrombase)** — DEPRECATED: Please use GetFileFromArchive(hash, OpenAs.GameFile) Loads a file from the base archives using either a file path or hash.
+- **[GameFileToJson](#wolvenkit-modkit-scripting-gamefiletojson)** — Creates a json representation of the specifed game file.
+- **[JsonToCR2W](#wolvenkit-modkit-scripting-jsontocr2w)** — Creates a CR2W game file from a json.
+- **[ChangeExtension](#wolvenkit-modkit-scripting-changeextension)** — Changes the extension of the provided string path.
+- **[GetFileFromArchive](#wolvenkit-modkit-scripting-getfilefromarchive)** — Loads a file from the base archives using either a file path or hash.
+- **[GetFileFromArchive](#wolvenkit-modkit-scripting-getfilefromarchive)** — Loads a file from the base archives using either a file path or hash.
+- **[FileExistsInArchive](#wolvenkit-modkit-scripting-fileexistsinarchive)** — Check if file exists in the game archives.
+- **[FileExistsInArchive](#wolvenkit-modkit-scripting-fileexistsinarchive)** — Check if file exists in the game archives.
+- **[YamlToJson](#wolvenkit-modkit-scripting-yamltojson)** — Converts a YAML string to a JSON string.
+- **[JsonToYaml](#wolvenkit-modkit-scripting-jsontoyaml)** — Converts a JSON string to a YAML string.
+- **[ConvertGameFile](#wolvenkit-modkit-scripting-convertgamefile)** — No description available.
+
+---
+
+# Detailed Documentation
+
+## WolvenKit.App.Scripting
+
+TODO.
+
+### SuspendFileWatcher
+
 > Turn on/off updates to the project tree, useful for when making lots of changes to the project structure.
 
 | Parameter | Description |
 |-----------|-------------|
 | `suspend` | bool for if updates are suspended |
+
 ```csharp
 SuspendFileWatcher(suspend: bool) → void
 ```
 
----
+### SaveToProject
 
 > Add the specified CR2WFile or IGameFile file to the project.
 
@@ -22,11 +114,12 @@ SuspendFileWatcher(suspend: bool) → void
 |-----------|-------------|
 | `path` | The file to write to |
 | `file` | CR2WFile or IGameFile to be saved |
+
 ```csharp
 SaveToProject(path: string, file: object) → void
 ```
 
----
+### SaveToRaw
 
 > Save the specified text to the specified path in the raw folder.
 
@@ -34,11 +127,12 @@ SaveToProject(path: string, file: object) → void
 |-----------|-------------|
 | `path` | The file to write to |
 | `content` | The string to write to the file |
+
 ```csharp
 SaveToRaw(path: string, content: string) → void
 ```
 
----
+### SaveToResources
 
 > Save the specified text to the specified path in the resources folder.
 
@@ -46,11 +140,12 @@ SaveToRaw(path: string, content: string) → void
 |-----------|-------------|
 | `path` | The file to write to |
 | `content` | The string to write to the file |
+
 ```csharp
 SaveToResources(path: string, content: string) → void
 ```
 
----
+### LoadFromResources
 
 > Loads the content of a text file from resources.
 
@@ -59,11 +154,12 @@ SaveToResources(path: string, content: string) → void
 | `path` | The relative path of the text file |
 
 **Returns:** The content or null
+
 ```csharp
 LoadFromResources(path: string) → ? string
 ```
 
----
+### LoadGameFileFromProject
 
 > Loads the specified game file from the project files rather than game archives.
 
@@ -71,11 +167,12 @@ LoadFromResources(path: string) → ? string
 |-----------|-------------|
 | `path` | The file to open for reading |
 | `type` | The type of the object which is returned. Can be "cr2w" or "json" |
+
 ```csharp
 LoadGameFileFromProject(path: string, type: string) → ? object
 ```
 
----
+### LoadRawJsonFromProject
 
 > Loads the specified json file from the project raw files rather than game archives.
 
@@ -83,29 +180,32 @@ LoadGameFileFromProject(path: string, type: string) → ? object
 |-----------|-------------|
 | `path` | The file to open for reading |
 | `type` | The type of the object which is returned. Can be "cr2w" or "json" |
+
 ```csharp
 LoadRawJsonFromProject(path: string, type: string) → ? object
 ```
 
----
+### GetProjectFiles
 
 > Retrieves a list of files from the project.
 
 | Parameter | Description |
 |-----------|-------------|
 | `folderType` | string parameter folderType = "archive" or "raw" |
+
 ```csharp
 GetProjectFiles(folderType: string) → List< string >
 ```
 
----
+### ClearExportFileLookup
 
 > Clears the lookup for exported depot files.
+
 ```csharp
 ClearExportFileLookup() → void
 ```
 
----
+### ExportFiles
 
 > Exports a list of files as you would with the export tool.
 
@@ -114,11 +214,12 @@ ClearExportFileLookup() → void
 | `fileList` | — |
 | `defaultSettings` | — |
 | `blocking` | — |
+
 ```csharp
 ExportFiles(fileList: IList, defaultSettings: ScriptObject? = null) → void
 ```
 
----
+### GetFileFromProject
 
 > Loads a file from the project using either a file path or hash.
 
@@ -126,11 +227,12 @@ ExportFiles(fileList: IList, defaultSettings: ScriptObject? = null) → void
 |-----------|-------------|
 | `path` | The path of the file to retrieve |
 | `openAs` | The output format (OpenAs.GameFile, OpenAs.CR2W or OpenAs.Json) |
+
 ```csharp
 GetFileFromProject(path: string, openAs: OpenAs) → ? object
 ```
 
----
+### GetFileFromProject
 
 > Loads a file from the project using either a file path or hash.
 
@@ -138,11 +240,12 @@ GetFileFromProject(path: string, openAs: OpenAs) → ? object
 |-----------|-------------|
 | `hash` | The hash of the file to retrieve |
 | `openAs` | The output format (OpenAs.GameFile, OpenAs.CR2W or OpenAs.Json) |
+
 ```csharp
 GetFileFromProject(hash: ulong, openAs: OpenAs) → ? object
 ```
 
----
+### GetFile
 
 > Loads a file from the project or archive (in this order) using either a file path or hash.
 
@@ -150,11 +253,12 @@ GetFileFromProject(hash: ulong, openAs: OpenAs) → ? object
 |-----------|-------------|
 | `path` | The path of the file to retrieve |
 | `openAs` | The output format (OpenAs.GameFile, OpenAs.CR2W or OpenAs.Json) |
+
 ```csharp
 GetFile(path: string, openAs: OpenAs) → ? object
 ```
 
----
+### GetFile
 
 > Loads a file from the project or archive (in this order) using either a file path or hash.
 
@@ -162,66 +266,72 @@ GetFile(path: string, openAs: OpenAs) → ? object
 |-----------|-------------|
 | `hash` | The hash of the file to retrieve |
 | `openAs` | The output format (OpenAs.GameFile, OpenAs.CR2W or OpenAs.Json) |
+
 ```csharp
 GetFile(hash: ulong, openAs: OpenAs) → ? object
 ```
 
----
+### FileExistsInProject
 
 > Check if file exists in the project.
 
 | Parameter | Description |
 |-----------|-------------|
 | `path` | file path to check |
+
 ```csharp
 FileExistsInProject(path: string) → bool
 ```
 
----
+### FileExistsInProject
 
 > Check if file exists in the project.
 
 | Parameter | Description |
 |-----------|-------------|
 | `hash` | hash value to be checked |
+
 ```csharp
 FileExistsInProject(hash: ulong) → bool
 ```
 
----
+### FileExists
 
 > Check if file exists in either the game archives or the project.
 
 | Parameter | Description |
 |-----------|-------------|
 | `path` | file path to check |
+
 ```csharp
 FileExists(path: string) → bool
 ```
 
----
+### FileExists
 
 > Check if file exists in either the game archives or the project.
 
 | Parameter | Description |
 |-----------|-------------|
 | `hash` | hash value to be checked |
+
 ```csharp
 FileExists(hash: ulong) → bool
 ```
 
----
+### FileExistsInRaw
 
 > Check if file exists in the project Raw folder.
 
 | Parameter | Description |
 |-----------|-------------|
 | `filepath` | relative filepath to be checked |
+
 ```csharp
 FileExistsInRaw(filepath: string) → bool
 ```
 
----
+### DeleteFile
 
 > Deletes a file from the project, if it exists.
 
@@ -231,39 +341,44 @@ FileExistsInRaw(filepath: string) → bool
 | `folderType` | project subfolder type (archive\|raw\|resources) |
 
 **Returns:** true if the file was deleted
+
 ```csharp
 DeleteFile(filepath: string, folderType: string) → bool
 ```
 
----
+### GetRecords
 
 > Loads all records as TweakDBID paths.
+
 ```csharp
 GetRecords() → IEnumerable
 ```
 
----
+### GetFlats
 
 > Loads all flats as TweakDBID paths.
+
 ```csharp
 GetFlats() → IEnumerable
 ```
 
----
+### GetQueries
 
 > Loads all queries as TweakDBID paths.
+
 ```csharp
 GetQueries() → IEnumerable
 ```
 
----
+### GetGroupTags
 
 > Loads all group tags as TweakDBID paths.
+
 ```csharp
 GetGroupTags() → IEnumerable
 ```
 
----
+### GetRecord
 
 > Loads a record by its TweakDBID path.
 
@@ -272,49 +387,54 @@ GetGroupTags() → IEnumerable
 | `path` | — |
 
 **Returns:** record as a JSON string, null when not found
+
 ```csharp
 GetRecord(path: string) → ? string
 ```
 
----
+### GetFlat
 
 > Loads a flat by its TweakDBID path.
 
 **Returns:** flat as a JSON string, null when not found
+
 ```csharp
 GetFlat(path: string) → ? string
 ```
 
----
+### GetQuery
 
 > Loads flats of a query by its TweakDBID path.
 
 **Returns:** a list of flats as TweakDBID paths, empty when not found
+
 ```csharp
 GetQuery(path: string) → IEnumerable
 ```
 
----
+### GetGroupTag
 
 > Loads a group tag by its TweakDBID path.
 
 **Returns:** flat as a JSON string, null when not found
+
 ```csharp
 GetGroupTag(path: string) → ? byte
 ```
 
----
+### HasTDBID
 
 > Whether TweakDBID path exists as a flat or a record?
 
 | Parameter | Description |
 |-----------|-------------|
 | `path` | — |
+
 ```csharp
 HasTDBID(path: string) → bool
 ```
 
----
+### GetTDBIDPath
 
 > Tries to get TweakDBID path from its hash.
 
@@ -323,11 +443,12 @@ HasTDBID(path: string) → bool
 | `key` | — |
 
 **Returns:** path of the hash, null when undefined
+
 ```csharp
 GetTDBIDPath(key: ulong) → ? string
 ```
 
----
+### ShowMessageBox
 
 > Displays a message box.
 
@@ -339,36 +460,40 @@ GetTDBIDPath(key: ulong) → ? string
 | `buttons` | A WMessageBoxButtons value that specifies which buttons to display. |
 
 **Returns:** A WMessageBoxResult value that specifies the result the message box button that was clicked by the user returned.
+
 ```csharp
 ShowMessageBox(text: string, caption: string, image: WMessageBoxImage, buttons: WMessageBoxButtons) → WMessageBoxResult
 ```
 
----
+### Extract
 
 > Extracts a file from the base archive and adds it to the project.
 
 | Parameter | Description |
 |-----------|-------------|
 | `path` | Path of the game file |
+
 ```csharp
 Extract(path: string) → void
 ```
 
----
+### GetActiveDocument
 
 > Gets the current active document from the docking manager.
+
 ```csharp
 GetActiveDocument() → ?  ScriptDocumentWrapper
 ```
 
----
+### GetDocuments
 
 > Gets all documents from the docking manager.
+
 ```csharp
 GetDocuments() → ? IList<  ScriptDocumentWrapper  >
 ```
 
----
+### OpenDocument
 
 > Opens a file in  WolvenKit .
 
@@ -377,22 +502,24 @@ GetDocuments() → ? IList<  ScriptDocumentWrapper  >
 | `path` | Path to the file |
 
 **Returns:** Returns true if the file was opened, otherwise it returns false
+
 ```csharp
 OpenDocument(path: string) → bool
 ```
 
----
+### OpenDocument
 
 > Opens an archive game file.
 
 | Parameter | Description |
 |-----------|-------------|
 | `gameFile` | The game file to open |
+
 ```csharp
 OpenDocument(gameFile: IGameFile) → void
 ```
 
----
+### ExportGeometryCacheEntry
 
 > Exports an geometry_cache entry.
 
@@ -400,22 +527,24 @@ OpenDocument(gameFile: IGameFile) → void
 |-----------|-------------|
 | `sectorHashStr` | Sector hash as string |
 | `entryHashStr` | Entry hash as string |
+
 ```csharp
 ExportGeometryCacheEntry(sectorHashStr: string, entryHashStr: string) → ? string
 ```
 
----
+### CreateInstanceAsJSON
 
 > Creates a new instance of the given class, and returns it converted to a JSON string.
 
 | Parameter | Description |
 |-----------|-------------|
 | `className` | Name of the class |
+
 ```csharp
 CreateInstanceAsJSON(className: string) → ? object
 ```
 
----
+### HashString
 
 > Returns the hashcode for a given string.
 
@@ -423,29 +552,32 @@ CreateInstanceAsJSON(className: string) → ? object
 |-----------|-------------|
 | `data` | String to be hashed |
 | `method` | Hash method to use. Can be "fnv1a64" or "default" (Uses the String objects built in hash function) |
+
 ```csharp
 HashString(data: string, method: string) → ? ulong
 ```
 
----
+### Sleep
 
 > Pauses the execution of the script for the specified amount of milliseconds.
 
 | Parameter | Description |
 |-----------|-------------|
 | `milliseconds` | The number of milliseconds to sleep. |
+
 ```csharp
 Sleep(milliseconds: int) → void
 ```
 
----
+### ProgramVersion
 
 > Returns the current wolvenkit version.
+
 ```csharp
 ProgramVersion() → string
 ```
 
----
+### ShowSettings
 
 > Shows the settings dialog for the supplied data.
 
@@ -454,107 +586,111 @@ ProgramVersion() → string
 | `data` | A JavaScript object containing data |
 
 **Returns:** Returns true when the user changed the settings, otherwise it returns false
+
 ```csharp
 ShowSettings(data: ScriptObject) → bool
 ```
 
----
+### SaveAs
 
 ```csharp
 SaveAs(path: string, action: Action< string >) → void
 ```
 
----
+### GetBaseFolder
 
 ```csharp
 GetBaseFolder(folderType: string) → string?
 ```
 
----
+### ParseExportSettings< T >
 
 ```csharp
 ParseExportSettings< T >(scriptSettingsObject: ScriptObject) → T
 ```
 
----
+### GetGlobalExportArgs
 
 ```csharp
 GetGlobalExportArgs(settings: ScriptObject) → GlobalExportArgs
 ```
 
----
+### ConvertTDBToPath
 
 ```csharp
 ConvertTDBToPath(ids: List< TweakDBID >?) → List< string >
 ```
 
----
+### ConvertTDBToJson
 
 ```csharp
 ConvertTDBToJson(tdb: object?) → string?
 ```
 
----
+### GetGameFile
 
 > Gets the game file.
 
 | Parameter | Description |
 |-----------|-------------|
 | `type` | The output type of the game file ("cr2w" or "json") |
+
 ```csharp
 GetGameFile(type: string) → object?
 ```
 
----
+### Save
 
 > Saves the document.
+
 ```csharp
 Save() → void
 ```
 
----
+### Reload
 
 > Reloads the document.
 
 | Parameter | Description |
 |-----------|-------------|
 | `force` | If force is true, any unsaved changes will be discarded |
+
 ```csharp
 Reload(force: bool) → bool
 ```
 
----
+### Close
 
 > Closes the document without saving.
+
 ```csharp
 Close() → void
 ```
 
----
-
+### AddMenuItem
 
 | Parameter | Description |
 |-----------|-------------|
 | `target` | — |
 | `name` | — |
+
 ```csharp
 AddMenuItem(target: string, name: string) → ScriptFunctionWrapper
 ```
 
----
-
+### AddMenuItem
 
 | Parameter | Description |
 |-----------|-------------|
 | `target` | — |
 | `name` | — |
 | `onClick` | — |
+
 ```csharp
 AddMenuItem(target: string, name: string, onClick: ScriptObject) → ScriptFunctionWrapper
 ```
 
----
-
+### AddMenuItem
 
 | Parameter | Description |
 |-----------|-------------|
@@ -562,12 +698,12 @@ AddMenuItem(target: string, name: string, onClick: ScriptObject) → ScriptFunct
 | `name` | — |
 | `onClick` | — |
 | `args` | — |
+
 ```csharp
 AddMenuItem(target: string, name: string, onClick: ScriptObject?, args: params object??[]) → ScriptFunctionWrapper
 ```
 
----
-
+### AddMenuItem
 
 | Parameter | Description |
 |-----------|-------------|
@@ -575,62 +711,74 @@ AddMenuItem(target: string, name: string, onClick: ScriptObject?, args: params o
 | `name` | — |
 | `onClick` | — |
 | `args` | — |
+
 ```csharp
 AddMenuItem(target: ScriptFunctionWrapper, name: string, onClick: ScriptObject? = null, args: params object??[]) → ScriptFunctionWrapper
 ```
 
 ---
 
+## WolvenKit.Modkit.Scripting
+
+TODO.
+
+### GetArchiveFiles
+
 > Gets a list of the files available in the game archives Note to myself: Don't use IEnumerable<T>
+
 ```csharp
 GetArchiveFiles() → IEnumerable
 ```
 
----
+### GetFileFromBase
 
 > DEPRECATED: Please use GetFileFromArchive(path, OpenAs.GameFile) Loads a file from the base archives using either a file path or hash.
 
 | Parameter | Description |
 |-----------|-------------|
 | `path` | The path of the file to retrieve |
+
 ```csharp
 GetFileFromBase(path: string) → ? IGameFile
 ```
 
----
+### GetFileFromBase
 
 > DEPRECATED: Please use GetFileFromArchive(hash, OpenAs.GameFile) Loads a file from the base archives using either a file path or hash.
 
 | Parameter | Description |
 |-----------|-------------|
 | `hash` | The hash of the file to retrieve |
+
 ```csharp
 GetFileFromBase(hash: ulong) → ? IGameFile
 ```
 
----
+### GameFileToJson
 
 > Creates a json representation of the specifed game file.
 
 | Parameter | Description |
 |-----------|-------------|
 | `gameFile` | The gameFile which should be converted |
+
 ```csharp
 GameFileToJson(gameFile: IGameFile) → ? string
 ```
 
----
+### JsonToCR2W
 
 > Creates a CR2W game file from a json.
 
 | Parameter | Description |
 |-----------|-------------|
 | `json` | — |
+
 ```csharp
 JsonToCR2W(json: string) → ? CR2WFile
 ```
 
----
+### ChangeExtension
 
 > Changes the extension of the provided string path.
 
@@ -638,11 +786,12 @@ JsonToCR2W(json: string) → ? CR2WFile
 |-----------|-------------|
 | `path` | The path of the file to change |
 | `extension` | — |
+
 ```csharp
 ChangeExtension(path: string, extension: string) → string
 ```
 
----
+### GetFileFromArchive
 
 > Loads a file from the base archives using either a file path or hash.
 
@@ -650,11 +799,12 @@ ChangeExtension(path: string, extension: string) → string
 |-----------|-------------|
 | `path` | The path of the file to retrieve |
 | `openAs` | The output format (OpenAs.GameFile, OpenAs.CR2W or OpenAs.Json) |
+
 ```csharp
 GetFileFromArchive(path: string, openAs: OpenAs) → ? object
 ```
 
----
+### GetFileFromArchive
 
 > Loads a file from the base archives using either a file path or hash.
 
@@ -662,33 +812,36 @@ GetFileFromArchive(path: string, openAs: OpenAs) → ? object
 |-----------|-------------|
 | `hash` | The hash of the file to retrieve |
 | `openAs` | The output format (OpenAs.GameFile, OpenAs.CR2W or OpenAs.Json) |
+
 ```csharp
 GetFileFromArchive(hash: ulong, openAs: OpenAs) → ? object
 ```
 
----
+### FileExistsInArchive
 
 > Check if file exists in the game archives.
 
 | Parameter | Description |
 |-----------|-------------|
 | `path` | file path to check |
+
 ```csharp
 FileExistsInArchive(path: string) → bool
 ```
 
----
+### FileExistsInArchive
 
 > Check if file exists in the game archives.
 
 | Parameter | Description |
 |-----------|-------------|
 | `hash` | hash value to be checked |
+
 ```csharp
 FileExistsInArchive(hash: ulong) → bool
 ```
 
----
+### YamlToJson
 
 > Converts a YAML string to a JSON string.
 
@@ -697,11 +850,12 @@ FileExistsInArchive(hash: ulong) → bool
 | `yamlText` | The YAML string to convert |
 
 **Returns:** The converted JSON string
+
 ```csharp
 YamlToJson(yamlText: string) → string
 ```
 
----
+### JsonToYaml
 
 > Converts a JSON string to a YAML string.
 
@@ -710,11 +864,12 @@ YamlToJson(yamlText: string) → string
 | `jsonText` | The JSON string to convert |
 
 **Returns:** The converted YAML string
+
 ```csharp
 JsonToYaml(jsonText: string) → string
 ```
 
----
+### ConvertGameFile
 
 ```csharp
 ConvertGameFile(gameFile: IGameFile, openAs: OpenAs) → ? object
