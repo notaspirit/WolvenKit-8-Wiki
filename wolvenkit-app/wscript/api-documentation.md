@@ -7,193 +7,93 @@ All methods listed on this page are accessible via `wkit.functionName()` without
 <!-- AUTOGEN_MARKER_START -->
 # Overview
 
-## [AppScriptFunctions](#appscriptfunctions)
+## <a href="#appscriptfunctions">AppScriptFunctions</a>
 
 TODO.
 
-**[`SuspendFileWatcher`](#appscriptfunctions-suspendfilewatcher)**
-:   Turn on/off updates to the project tree, useful for when making lots of changes to the project structure.
+<table>
+<tr><td width="300"><b>Method</b></td><td><b>Description</b></td></tr>
+<tr><td><code><a href="#appscriptfunctions-suspendfilewatcher">SuspendFileWatcher</a></code></td><td>Turn on/off updates to the project tree, useful for when making lots of changes to the project structure.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-savetoproject">SaveToProject</a></code></td><td>Add the specified CR2WFile or IGameFile file to the project.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-savetoraw">SaveToRaw</a></code></td><td>Save the specified text to the specified path in the raw folder.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-savetoresources">SaveToResources</a></code></td><td>Save the specified text to the specified path in the resources folder.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-loadfromresources">LoadFromResources</a></code></td><td>Loads the content of a text file from resources.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-loadgamefilefromproject">LoadGameFileFromProject</a></code></td><td>Loads the specified game file from the project files rather than game archives.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-loadrawjsonfromproject">LoadRawJsonFromProject</a></code></td><td>Loads the specified json file from the project raw files rather than game archives.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-getprojectfiles">GetProjectFiles</a></code></td><td>Retrieves a list of files from the project.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-clearexportfilelookup">ClearExportFileLookup</a></code></td><td>Clears the lookup for exported depot files.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-exportfiles">ExportFiles</a></code></td><td>Exports a list of files as you would with the export tool.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-getfilefromproject">GetFileFromProject</a></code></td><td>Loads a file from the project using either a file path or hash.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-getfile">GetFile</a></code></td><td>Loads a file from the project or archive (in this order) using either a file path or hash.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-fileexistsinproject">FileExistsInProject</a></code></td><td>Check if file exists in the project.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-fileexists">FileExists</a></code></td><td>Check if file exists in either the game archives or the project.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-fileexistsinraw">FileExistsInRaw</a></code></td><td>Check if file exists in the project Raw folder.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-deletefile">DeleteFile</a></code></td><td>Deletes a file from the project, if it exists.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-getrecords">GetRecords</a></code></td><td>Loads all records as TweakDBID paths.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-getflats">GetFlats</a></code></td><td>Loads all flats as TweakDBID paths.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-getqueries">GetQueries</a></code></td><td>Loads all queries as TweakDBID paths.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-getgrouptags">GetGroupTags</a></code></td><td>Loads all group tags as TweakDBID paths.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-getrecord">GetRecord</a></code></td><td>Loads a record by its TweakDBID path.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-getflat">GetFlat</a></code></td><td>Loads a flat by its TweakDBID path.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-getquery">GetQuery</a></code></td><td>Loads flats of a query by its TweakDBID path.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-getgrouptag">GetGroupTag</a></code></td><td>Loads a group tag by its TweakDBID path.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-hastdbid">HasTDBID</a></code></td><td>Whether TweakDBID path exists as a flat or a record?</td></tr>
+<tr><td><code><a href="#appscriptfunctions-gettdbidpath">GetTDBIDPath</a></code></td><td>Tries to get TweakDBID path from its hash.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-showmessagebox">ShowMessageBox</a></code></td><td>Displays a message box.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-extract">Extract</a></code></td><td>Extracts a file from the base archive and adds it to the project.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-getactivedocument">GetActiveDocument</a></code></td><td>Gets the current active document from the docking manager.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-getdocuments">GetDocuments</a></code></td><td>Gets all documents from the docking manager.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-opendocument">OpenDocument</a></code></td><td>Opens a file in  WolvenKit .</td></tr>
+<tr><td><code><a href="#appscriptfunctions-exportgeometrycacheentry">ExportGeometryCacheEntry</a></code></td><td>Exports an geometry_cache entry.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-createinstanceasjson">CreateInstanceAsJSON</a></code></td><td>Creates a new instance of the given class, and returns it converted to a JSON string.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-hashstring">HashString</a></code></td><td>Returns the hashcode for a given string.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-sleep">Sleep</a></code></td><td>Pauses the execution of the script for the specified amount of milliseconds.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-programversion">ProgramVersion</a></code></td><td>Returns the current wolvenkit version.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-showsettings">ShowSettings</a></code></td><td>Shows the settings dialog for the supplied data.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-saveas">SaveAs</a></code></td><td>No description available.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-getbasefolder">GetBaseFolder</a></code></td><td>No description available.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-parseexportsettings-t">ParseExportSettings< T ></a></code></td><td>No description available.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-getglobalexportargs">GetGlobalExportArgs</a></code></td><td>No description available.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-converttdbtopath">ConvertTDBToPath</a></code></td><td>No description available.</td></tr>
+<tr><td><code><a href="#appscriptfunctions-converttdbtojson">ConvertTDBToJson</a></code></td><td>No description available.</td></tr>
+</table>
 
-**[`SaveToProject`](#appscriptfunctions-savetoproject)**
-:   Add the specified CR2WFile or IGameFile file to the project.
-
-**[`SaveToRaw`](#appscriptfunctions-savetoraw)**
-:   Save the specified text to the specified path in the raw folder.
-
-**[`SaveToResources`](#appscriptfunctions-savetoresources)**
-:   Save the specified text to the specified path in the resources folder.
-
-**[`LoadFromResources`](#appscriptfunctions-loadfromresources)**
-:   Loads the content of a text file from resources.
-
-**[`LoadGameFileFromProject`](#appscriptfunctions-loadgamefilefromproject)**
-:   Loads the specified game file from the project files rather than game archives.
-
-**[`LoadRawJsonFromProject`](#appscriptfunctions-loadrawjsonfromproject)**
-:   Loads the specified json file from the project raw files rather than game archives.
-
-**[`GetProjectFiles`](#appscriptfunctions-getprojectfiles)**
-:   Retrieves a list of files from the project.
-
-**[`ClearExportFileLookup`](#appscriptfunctions-clearexportfilelookup)**
-:   Clears the lookup for exported depot files.
-
-**[`ExportFiles`](#appscriptfunctions-exportfiles)**
-:   Exports a list of files as you would with the export tool.
-
-**[`GetFileFromProject`](#appscriptfunctions-getfilefromproject)**
-:   Loads a file from the project using either a file path or hash.
-
-**[`GetFile`](#appscriptfunctions-getfile)**
-:   Loads a file from the project or archive (in this order) using either a file path or hash.
-
-**[`FileExistsInProject`](#appscriptfunctions-fileexistsinproject)**
-:   Check if file exists in the project.
-
-**[`FileExists`](#appscriptfunctions-fileexists)**
-:   Check if file exists in either the game archives or the project.
-
-**[`FileExistsInRaw`](#appscriptfunctions-fileexistsinraw)**
-:   Check if file exists in the project Raw folder.
-
-**[`DeleteFile`](#appscriptfunctions-deletefile)**
-:   Deletes a file from the project, if it exists.
-
-**[`GetRecords`](#appscriptfunctions-getrecords)**
-:   Loads all records as TweakDBID paths.
-
-**[`GetFlats`](#appscriptfunctions-getflats)**
-:   Loads all flats as TweakDBID paths.
-
-**[`GetQueries`](#appscriptfunctions-getqueries)**
-:   Loads all queries as TweakDBID paths.
-
-**[`GetGroupTags`](#appscriptfunctions-getgrouptags)**
-:   Loads all group tags as TweakDBID paths.
-
-**[`GetRecord`](#appscriptfunctions-getrecord)**
-:   Loads a record by its TweakDBID path.
-
-**[`GetFlat`](#appscriptfunctions-getflat)**
-:   Loads a flat by its TweakDBID path.
-
-**[`GetQuery`](#appscriptfunctions-getquery)**
-:   Loads flats of a query by its TweakDBID path.
-
-**[`GetGroupTag`](#appscriptfunctions-getgrouptag)**
-:   Loads a group tag by its TweakDBID path.
-
-**[`HasTDBID`](#appscriptfunctions-hastdbid)**
-:   Whether TweakDBID path exists as a flat or a record?
-
-**[`GetTDBIDPath`](#appscriptfunctions-gettdbidpath)**
-:   Tries to get TweakDBID path from its hash.
-
-**[`ShowMessageBox`](#appscriptfunctions-showmessagebox)**
-:   Displays a message box.
-
-**[`Extract`](#appscriptfunctions-extract)**
-:   Extracts a file from the base archive and adds it to the project.
-
-**[`GetActiveDocument`](#appscriptfunctions-getactivedocument)**
-:   Gets the current active document from the docking manager.
-
-**[`GetDocuments`](#appscriptfunctions-getdocuments)**
-:   Gets all documents from the docking manager.
-
-**[`OpenDocument`](#appscriptfunctions-opendocument)**
-:   Opens a file in  WolvenKit .
-
-**[`ExportGeometryCacheEntry`](#appscriptfunctions-exportgeometrycacheentry)**
-:   Exports an geometry_cache entry.
-
-**[`CreateInstanceAsJSON`](#appscriptfunctions-createinstanceasjson)**
-:   Creates a new instance of the given class, and returns it converted to a JSON string.
-
-**[`HashString`](#appscriptfunctions-hashstring)**
-:   Returns the hashcode for a given string.
-
-**[`Sleep`](#appscriptfunctions-sleep)**
-:   Pauses the execution of the script for the specified amount of milliseconds.
-
-**[`ProgramVersion`](#appscriptfunctions-programversion)**
-:   Returns the current wolvenkit version.
-
-**[`ShowSettings`](#appscriptfunctions-showsettings)**
-:   Shows the settings dialog for the supplied data.
-
-**[`SaveAs`](#appscriptfunctions-saveas)**
-:   No description available.
-
-**[`GetBaseFolder`](#appscriptfunctions-getbasefolder)**
-:   No description available.
-
-**[`ParseExportSettings< T >`](#appscriptfunctions-parseexportsettings-t)**
-:   No description available.
-
-**[`GetGlobalExportArgs`](#appscriptfunctions-getglobalexportargs)**
-:   No description available.
-
-**[`ConvertTDBToPath`](#appscriptfunctions-converttdbtopath)**
-:   No description available.
-
-**[`ConvertTDBToJson`](#appscriptfunctions-converttdbtojson)**
-:   No description available.
-
-## [ScriptDocumentWrapper](#scriptdocumentwrapper)
+## <a href="#scriptdocumentwrapper">ScriptDocumentWrapper</a>
 
 TODO.
 
-**[`GetGameFile`](#scriptdocumentwrapper-getgamefile)**
-:   Gets the game file.
+<table>
+<tr><td width="300"><b>Method</b></td><td><b>Description</b></td></tr>
+<tr><td><code><a href="#scriptdocumentwrapper-getgamefile">GetGameFile</a></code></td><td>Gets the game file.</td></tr>
+<tr><td><code><a href="#scriptdocumentwrapper-save">Save</a></code></td><td>Saves the document.</td></tr>
+<tr><td><code><a href="#scriptdocumentwrapper-reload">Reload</a></code></td><td>Reloads the document.</td></tr>
+<tr><td><code><a href="#scriptdocumentwrapper-close">Close</a></code></td><td>Closes the document without saving.</td></tr>
+</table>
 
-**[`Save`](#scriptdocumentwrapper-save)**
-:   Saves the document.
-
-**[`Reload`](#scriptdocumentwrapper-reload)**
-:   Reloads the document.
-
-**[`Close`](#scriptdocumentwrapper-close)**
-:   Closes the document without saving.
-
-## [ScriptFunctions](#scriptfunctions)
+## <a href="#scriptfunctions">ScriptFunctions</a>
 
 TODO.
 
-**[`GetArchiveFiles`](#scriptfunctions-getarchivefiles)**
-:   Gets a list of the files available in the game archives Note to myself: Don't use IEnumerable<T>
+<table>
+<tr><td width="300"><b>Method</b></td><td><b>Description</b></td></tr>
+<tr><td><code><a href="#scriptfunctions-getarchivefiles">GetArchiveFiles</a></code></td><td>Gets a list of the files available in the game archives Note to myself: Don't use IEnumerable<T></td></tr>
+<tr><td><code><a href="#scriptfunctions-getfilefrombase">GetFileFromBase</a></code></td><td>DEPRECATED: Please use GetFileFromArchive(path, OpenAs.GameFile) Loads a file from the base archives using either a file path or hash.</td></tr>
+<tr><td><code><a href="#scriptfunctions-gamefiletojson">GameFileToJson</a></code></td><td>Creates a json representation of the specifed game file.</td></tr>
+<tr><td><code><a href="#scriptfunctions-jsontocr2w">JsonToCR2W</a></code></td><td>Creates a CR2W game file from a json.</td></tr>
+<tr><td><code><a href="#scriptfunctions-changeextension">ChangeExtension</a></code></td><td>Changes the extension of the provided string path.</td></tr>
+<tr><td><code><a href="#scriptfunctions-getfilefromarchive">GetFileFromArchive</a></code></td><td>Loads a file from the base archives using either a file path or hash.</td></tr>
+<tr><td><code><a href="#scriptfunctions-fileexistsinarchive">FileExistsInArchive</a></code></td><td>Check if file exists in the game archives.</td></tr>
+<tr><td><code><a href="#scriptfunctions-yamltojson">YamlToJson</a></code></td><td>Converts a YAML string to a JSON string.</td></tr>
+<tr><td><code><a href="#scriptfunctions-jsontoyaml">JsonToYaml</a></code></td><td>Converts a JSON string to a YAML string.</td></tr>
+<tr><td><code><a href="#scriptfunctions-convertgamefile">ConvertGameFile</a></code></td><td>No description available.</td></tr>
+</table>
 
-**[`GetFileFromBase`](#scriptfunctions-getfilefrombase)**
-:   DEPRECATED: Please use GetFileFromArchive(path, OpenAs.GameFile) Loads a file from the base archives using either a file path or hash.
+## <a href="#uiscriptfunctions">UiScriptFunctions</a>
 
-**[`GameFileToJson`](#scriptfunctions-gamefiletojson)**
-:   Creates a json representation of the specifed game file.
-
-**[`JsonToCR2W`](#scriptfunctions-jsontocr2w)**
-:   Creates a CR2W game file from a json.
-
-**[`ChangeExtension`](#scriptfunctions-changeextension)**
-:   Changes the extension of the provided string path.
-
-**[`GetFileFromArchive`](#scriptfunctions-getfilefromarchive)**
-:   Loads a file from the base archives using either a file path or hash.
-
-**[`FileExistsInArchive`](#scriptfunctions-fileexistsinarchive)**
-:   Check if file exists in the game archives.
-
-**[`YamlToJson`](#scriptfunctions-yamltojson)**
-:   Converts a YAML string to a JSON string.
-
-**[`JsonToYaml`](#scriptfunctions-jsontoyaml)**
-:   Converts a JSON string to a YAML string.
-
-**[`ConvertGameFile`](#scriptfunctions-convertgamefile)**
-:   No description available.
-
-## [UiScriptFunctions](#uiscriptfunctions)
-
-**[`AddMenuItem`](#uiscriptfunctions-addmenuitem)**
-:   No description available.
+<table>
+<tr><td width="300"><b>Method</b></td><td><b>Description</b></td></tr>
+<tr><td><code><a href="#uiscriptfunctions-addmenuitem">AddMenuItem</a></code></td><td>No description available.</td></tr>
+</table>
 
 ---
 
