@@ -52,7 +52,7 @@ TODO.
 | [ShowSettings](#showsettings) | Shows the settings dialog for the supplied data. |
 | [SaveAs](#saveas) | No description available. |
 | [GetBaseFolder](#getbasefolder) | No description available. |
-| [ParseExportSettings< T >](#parseexportsettings-t) | No description available. |
+| [ParseExportSettings](#parseexportsettings) | No description available. |
 | [GetGlobalExportArgs](#getglobalexportargs) | No description available. |
 | [ConvertTDBToPath](#converttdbtopath) | No description available. |
 | [ConvertTDBToJson](#converttdbtojson) | No description available. |
@@ -696,7 +696,7 @@ GetBaseFolder(folderType: string) → string?
 
 ---
 
-### ParseExportSettings< T >
+### ParseExportSettings
 
 ```csharp
 ParseExportSettings< T >(scriptSettingsObject: ScriptObject) → T
